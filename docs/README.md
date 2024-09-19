@@ -73,8 +73,8 @@ Detailed information on Ballerina connector structure can be found in the [Balle
 2. Save this file as `spec.yaml`(or `spec.json`) under the `docs/spec` directory, and ensure that the OpenAPI specification is valid and complete. 
 
 3. You may need to sanitize the OpenAPI specification to ensure compatibility with the Ballerina OpenAPI tool. This process may involve:
-  - Renaming schema names to comply with Ballerina naming conventions.
-  - Adding, removing, or modifying security schemes to customize authentication options.
+   - Renaming schema names to comply with Ballerina naming conventions.
+   - Adding, removing, or modifying security schemes to customize authentication options.
 
 ## Step 3: Generating the Connector
 
@@ -93,16 +93,16 @@ Use Ballerina's OpenAPI tool to generate your connector:
    This will generate the connector code in your `ballerina` directory.
 
 2. Make sure that the generated client will consist of the following files:
-- `client.bal`: Contains the client implementation with all the API operations.
-- `types.bal`: Contains the data types used in the client.
-- `utils.bal`: Contains utility functions used in the client.
+   - `client.bal`: Contains the client implementation with all the API operations.
+   - `types.bal`: Contains the data types used in the client.
+   - `utils.bal`: Contains utility functions used in the client.
 
 ## Step 5: Testing the Connector
 
 1. Navigate to the `ballerina/tests` directory and create a new Ballerina test file to test the connector operations.
 2. Implement test cases for the most common use cases (or all use cases if possible) related to the connector operations.
 
-> Note: More information on writing tests can be found in the [Ballerina testing guide](https://ballerina.io/learn/test-ballerina-code/test-a-simple-function/).
+Detailed information on writing tests can be found in the [Ballerina testing guide](https://ballerina.io/learn/test-ballerina-code/test-a-simple-function/).
 
 ## Step 6: Updating Documentation
 
@@ -111,8 +111,10 @@ Use Ballerina's OpenAPI tool to generate your connector:
    - **Setup guide**: Instructions on how to set up and use the connector.
    - **Quickstart**: A simple example demonstrating how to use the connector.
    - **Examples**: links to example code demonstrating the connector's usage.
+
 2. Update the main `README.md` file in the root directory with more detailed information about the connector, its features, and how to use it.
-3. All the real world examples should be added to the `examples` directory.
+
+3. All the real world examples should be added to the `examples/` directory.
 
 ## Conclusion
 
