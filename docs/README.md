@@ -60,9 +60,9 @@ Before we begin, make sure you have:
    └── settings.gradle
    ```
 
-> Note: More information on the structure of a Ballerina connector can be found in the [Ballerina module contribution guide](https://github.com/ballerina-platform/ballerina-library/blob/main/docs/adding-a-new-ballerina-module.md#directory-structure).
+> Note: Detailed information on Ballerina connector structure can be found in the [Ballerina module contribution guide](https://github.com/ballerina-platform/ballerina-library/blob/main/docs/adding-a-new-ballerina-module.md#directory-structure).
 
-> Note: All the variables in the project template are added as placeholders. You can replace them with your own values by using [this Ballerina script](https://github.com/ballerina-platform/ballerina-library/blob/main/library-templates/generated-connector-template/scripts/replace_placeholders.bal).
+> Note: All the variables in the project template are added as placeholders. You can replace them with your connector specific values using [this Ballerina script](https://github.com/ballerina-platform/ballerina-library/blob/main/library-templates/generated-connector-template/scripts/replace_placeholders.bal).
 
 ## Step 2: Preparing the OpenAPI Specification
 
