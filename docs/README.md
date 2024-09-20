@@ -123,13 +123,9 @@ These files will be displayed on the Ballerina Central package landing page. Ens
 
 2. Update `README.md`
 
-This file will be displayed on the GitHub repository landing page. Therefore it should include the same information as `Module.md` with a few more  additional sections such as Building from the Source, Contributing, License, etc.
+This file will be displayed on the GitHub repository landing page. Therefore, it should include the same information as `Module.md` with a few additional sections such as `Building from Source`, `Contributing`, `License`, etc.
 
-- **Building from Source**: Instructions for users who want to build the connector from the source code.
-- **Contributing**: Guidelines for contributing to the project, including how to report issues or suggest improvements.
-- **License**: Information about the licensing terms of the connector.
-
->  For reference, check the [Twitter connector README](https://github.com/ballerina-platform/module-ballerinax-twitter/blob/main/README.md).
+> For reference, check the [Twitter connector README](https://github.com/ballerina-platform/module-ballerinax-twitter/blob/main/README.md).
 
 3. Write Example Use Cases (Optional)
 
