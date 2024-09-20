@@ -27,11 +27,9 @@ Before we begin, make sure you have:
    cd <connector-repo-name>
    ```
 
-3. Visit the [Ballerina generated connector template](https://github.com/ballerina-platform/ballerina-library/tree/main/library-templates/generated-connector-template) on GitHub.
+3. Visit the [Ballerina generated connector template on GitHub](https://github.com/ballerina-platform/ballerina-library/tree/main/library-templates/generated-connector-template/files) and copy the entire project structure and content to your local repository folder, making sure to include all files and directories.
 
-4. Visit and copy the structure from the [standard Ballerina generated connector template](https://github.com/ballerina-platform/ballerina-library/tree/main/library-templates/generated-connector-template) to your local repository folder. Make sure to include all files and directories.
-
-5. Your local project structure should now look similar to this:
+4. Your local project structure should now look similar to this:
    ```
    module-ballerinax-myconnector/
    ├── .github/
@@ -60,7 +58,7 @@ Before we begin, make sure you have:
    └── settings.gradle
    ```
 
-> **Tip**: The template includes placeholders for various fields. To update these with your connector's specific details, use the provided [Ballerina script](https://github.com/ballerina-platform/ballerina-library/blob/main/library-templates/generated-connector-template/scripts/replace_placeholders.bal).
+> **Tip**: The template includes placeholders for various fields. To update them with your connector specific metadata, use the provided [Ballerina script](https://github.com/ballerina-platform/ballerina-library/blob/main/library-templates/generated-connector-template/scripts/replace_placeholders.bal).
 
 Detailed information on Ballerina connector structure can be found in the [Ballerina module contribution guide](https://github.com/ballerina-platform/ballerina-library/blob/main/docs/adding-a-new-ballerina-module.md#directory-structure).
 
