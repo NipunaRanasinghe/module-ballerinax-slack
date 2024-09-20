@@ -58,14 +58,14 @@ Before we begin, make sure you have:
    └── settings.gradle
    ```
 
-> **Tip**: The template includes placeholders for various fields. To update them with your connector specific metadata, use the provided [Ballerina script](https://github.com/ballerina-platform/ballerina-library/blob/main/library-templates/generated-connector-template/scripts/replace_placeholders.bal).
+> **Tip**: The template includes placeholders for various fields. To update them with your connector-specific metadata, use the provided [Ballerina script](https://github.com/ballerina-platform/ballerina-library/blob/main/library-templates/generated-connector-template/scripts/replace_placeholders.bal).
 
-Detailed information on Ballerina connector structure can be found in the [Ballerina module contribution guide](https://github.com/ballerina-platform/ballerina-library/blob/main/docs/adding-a-new-ballerina-module.md#directory-structure).
+Detailed information on the Ballerina connector structure can be found in the [Ballerina module contribution guide](https://github.com/ballerina-platform/ballerina-library/blob/main/docs/adding-a-new-ballerina-module.md#directory-structure).
 
 ## Step 2: Preparing the OpenAPI Specification
 
 1. Find the OpenAPI specification for the API you want to create a connector for. This is usually available in the API documentation.
-   Example: For Twitter, you can get the latest API specification from [Twitter OpenAPI endpoint](https://api.twitter.com/2/openapi.json).
+   Example: For Twitter, you can get the latest API specification from the [Twitter OpenAPI endpoint](https://api.twitter.com/2/openapi.json).
 
 2. Save the file as `spec.yaml` (or `spec.json`) in the `docs/spec` directory of your project.
 
@@ -84,12 +84,12 @@ With your OpenAPI spec ready, use the [Ballerina OpenAPI tool](https://ballerina
 
    Example for Twitter:
    ```bash
-   bal openapi -i docs/spec/openapi.josn --mode client -o ballerina
+   bal openapi -i docs/spec/openapi.json --mode client -o ballerina
    ```
 
    This will generate the connector code in your `ballerina` directory.
 
-2. Make sure that the generated client will consist of the following files:
+2. Make sure that the generated client consists of the following files:
    - `client.bal`: Contains the client implementation with all the API operations.
    - `types.bal`: Contains the data types used in the client.
    - `utils.bal`: Contains utility functions used in the client.
@@ -100,7 +100,7 @@ Now that your connector is generated, it’s important to write tests to ensure 
 
 1. In the `ballerina/tests` directory, add the required test files and write test cases for the key operations of your connector. Aim to cover as many API use cases as possible.
 
-2. Execute the tests using the `bal test` commands to verify the functionality of your connector.
+2. Execute the tests using the `bal test` command to verify the functionality of your connector.
 
 > For detailed guidance on writing tests, check the [Ballerina testing guide](https://ballerina.io/learn/test-ballerina-code/test-a-simple-function/).
 
@@ -124,14 +124,14 @@ Documentation is crucial for helping others understand and use your connector ef
 
 Once you’ve completed the development and testing of your connector, it’s time to publish it for others to use.
 
-1. Make sure to update the `Ballerina.toml` file with the below details:
+1. Make sure to update the `Ballerina.toml` file with the following details:
    - `org`: Your organization name.
    - `name`: The name of your connector.
    - `version`: The version of your connector.
-   - `license`: The license under which your connector is distributed. 
+   - `license`: The license under which your connector is distributed.
    - `authors`: Your name and email address.
    - `keywords`: Keywords to help users find your connector.
-   - `icon`: Relative path to the icon file.
+   - `icon`: The relative path to the icon file.
    - `repository`: The URL of your GitHub repository.
 
 2. Follow the steps in the [Ballerina package publishing guide](https://ballerina.io/learn/publish-packages-to-ballerina-central/) to publish your connector to Ballerina Central under your organization.
@@ -140,6 +140,6 @@ Once you’ve completed the development and testing of your connector, it’s ti
 
 Congratulations! You've successfully created your first Ballerina connector using OpenAPI. This process allows you to quickly integrate external services and share your connector with the Ballerina community.
 
-Remember to keep your connector up-to-date with any changes in the API’s OpenAPI specification and to test thoroughly whenever updates are made. 
+Remember to keep your connector up to date with any changes in the API’s OpenAPI specification and to test thoroughly whenever updates are made.
 
 Also, ensure you comply with the API’s terms of service when developing and distributing your connector.
