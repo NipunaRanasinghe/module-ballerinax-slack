@@ -110,7 +110,7 @@ Now that your connector is generated, it’s important to write tests to ensure 
 
 Follow these steps to ensure your connector is well-documented:
 
-1. Update `Module.md` and `Package.md`
+1. Update `Module.md` and `Package.md` files
 
 These files will be displayed on the Ballerina Central package landing page. Ensure they introduce and explain the connector package clearly and comprehensively. Each file should include the following sections:
 
@@ -121,7 +121,7 @@ These files will be displayed on the Ballerina Central package landing page. Ens
 
 > For reference, check the [Twitter connector documentation](https://github.com/ballerina-platform/module-ballerinax-twitter/blob/main/ballerina/Module.md).
 
-2. Update `README.md`
+2. Update the `README.md` file
 
 This file will be displayed on the GitHub repository landing page. Therefore, it should include the same information as `Module.md` with a few additional sections such as `Building from Source`, `Contributing`, `License`, etc.
 
@@ -129,12 +129,12 @@ This file will be displayed on the GitHub repository landing page. Therefore, it
 
 3. Write Example Use Cases (Optional)
 
-Providing practical, real-world examples can significantly enhance users' understanding of the connector. These examples should demonstrate how the connector can be used in various scenarios.
+Providing practical, real-world examples helps users understand the connector better. These examples should show how the connector is used in different scenarios.
 
-- Place the example files in the `examples/` directory.
-- Ensure that examples cover a range of common use cases that developers are likely to encounter.
+- All the examples should be added under the `examples/` directory.
+- Each example should be added as a Ballerina package with its own `README.md` file, explaining the use case and how to run the example.
 
-> For reference, check out the [Twitter connector examples](https://github.com/ballerina-platform/module-ballerinax-twitter/tree/main/examples).
+> For reference, check the [Twitter connector examples](https://github.com/ballerina-platform/module-ballerinax-twitter/tree/main/examples).
 
 ## Step 6: Publishing the connector
 
