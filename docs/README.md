@@ -104,7 +104,7 @@ Now that your connector is generated, it’s important to write tests to ensure 
 
 > For detailed guidance on writing tests, check the [Ballerina testing guide](https://ballerina.io/learn/test-ballerina-code/test-a-simple-function/).
 
-> For sample implementations, refer to the [test implementation of the Ballerina Twitter connector]((https://github.com/ballerina-platform/module-ballerinax-twitter/tree/main/ballerina/tests).
+> For sample implementations, refer to the [test implementation of the Ballerina Twitter connector](https://github.com/ballerina-platform/module-ballerinax-twitter/tree/main/ballerina/tests).
 
 ## Step 5: Documenting the connector
 
