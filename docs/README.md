@@ -106,19 +106,39 @@ Now that your connector is generated, it’s important to write tests to ensure 
 
 > For sample implementations, refer to the [test implementation of the Ballerina Twitter connector](https://github.com/ballerina-platform/module-ballerinax-twitter/tree/main/ballerina/tests).
 
-## Step 5: Documenting the connector
+## Step 5: Documenting the Connector
 
-Documentation is crucial for helping others understand and use your connector effectively.
+Follow these steps to ensure your connector is well-documented:
 
-1. **Update `Module.md` and `Package.md`**: In the `ballerina` directory, update these files with:
-   - **Overview**: A brief introduction to the connector.
-   - **Setup**: How to configure and start using the connector.
-   - **Quickstart**: A simple example to get users started.
-   - **Examples**: Detailed code samples.
+1. Update `Module.md` and `Package.md`
 
-2. **Update `README.md`**: Update the main `README.md` file in the project root to provide comprehensive information about your connector, including its features and usage.
+These files will be displayed on the Ballerina Central package landing page. Ensure they introduce and explain the connector package clearly and comprehensively. Each file should include the following sections:
 
-3. **Add Examples**: Place real-world usage examples in the `examples/` directory.
+- **Overview**: Provide a concise introduction to the connector, explaining its purpose and key features.
+- **Setup**: Offer step-by-step instructions on configuring the connector and any necessary prerequisites, such as API keys or environment setup.
+- **Quickstart**: Include a simple, clear example that helps users start using the connector immediately.
+- **Examples**: Link to additional use cases, providing context on how the connector can be used in different scenarios.
+
+> For reference, check the [Twitter connector documentation](https://github.com/ballerina-platform/module-ballerinax-twitter/blob/main/ballerina/Module.md).
+
+2. Update `README.md`
+
+This file will be displayed on the GitHub repository landing page. Therefore it should include the same information as `Module.md` with a few more  additional sections such as Building from the Source, Contributing, License, etc.
+
+- **Building from Source**: Instructions for users who want to build the connector from the source code.
+- **Contributing**: Guidelines for contributing to the project, including how to report issues or suggest improvements.
+- **License**: Information about the licensing terms of the connector.
+
+>  For reference, check the [Twitter connector README](https://github.com/ballerina-platform/module-ballerinax-twitter/blob/main/README.md).
+
+3. Write Example Use Cases (Optional)
+
+Providing practical, real-world examples can significantly enhance users' understanding of the connector. These examples should demonstrate how the connector can be used in various scenarios.
+
+- Place the example files in the `examples/` directory.
+- Ensure that examples cover a range of common use cases that developers are likely to encounter.
+
+> For reference, check out the [Twitter connector examples](https://github.com/ballerina-platform/module-ballerinax-twitter/tree/main/examples).
 
 ## Step 6: Publishing the connector
 
